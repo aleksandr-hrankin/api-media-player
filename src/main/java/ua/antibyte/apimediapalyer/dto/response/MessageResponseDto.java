@@ -1,10 +1,10 @@
-package ua.antibyte.apimediapalyer.dto;
+package ua.antibyte.apimediapalyer.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @AllArgsConstructor
 @Data
-public class ResponseMessageDto {
+public class MessageResponseDto {
     private String message;
 }

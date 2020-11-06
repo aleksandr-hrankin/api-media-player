@@ -1,13 +1,11 @@
 package ua.antibyte.apimediapalyer.service.impl;
 
+import java.io.IOException;
+import java.util.List;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
-import org.springframework.web.multipart.MultipartFile;
 import ua.antibyte.apimediapalyer.entity.Song;
 import ua.antibyte.apimediapalyer.repository.SongRepository;
 import ua.antibyte.apimediapalyer.service.SongService;
-import java.io.IOException;
-import java.util.List;
 
 @Service
 public class SongServiceImpl implements SongService {
@@ -18,9 +16,7 @@ public class SongServiceImpl implements SongService {
     }
 
     @Override
-    public Song save(MultipartFile file) throws IOException {
-        String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-        Song song = new Song(fileName, file.getContentType(), file.getBytes());
+    public Song save(Song song) throws IOException {
         return songRepository.save(song);
     }
 
