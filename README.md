@@ -1,4 +1,4 @@
-[Application demo video](https://www.loom.com/share/52fa8330fb0943e08bae9695c980fb21)
+[Application demo video](https://www.loom.com/share/885df645bf0149c99a55aa36a467fdc1)
 
 # Media Player
 
